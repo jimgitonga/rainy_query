@@ -10,7 +10,7 @@ display the message “Take an umbrella”. If they did not answer yes
 to the first question, display the answer “Enjoy your day”
 """
 raining=input('is it raining (y/n) : ').strip().lower()
-if raining=='y':
+if raining=='y' and not 'n':
     windy=input('is it windy (y/n) : ').strip().lower()
     if windy=='y':
         print('It is too windy for an umbrella')
